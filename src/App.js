@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import GMap from './GMap';
 
 // API key of the google map
-const GOOGLE_MAP_API_KEY = '<YOUR_GOOGLE_MAP_API_KEY>';
+const GOOGLE_MAP_API_KEY = 'AIzaSyBVFhE-38oVhwQGeesPW3L9VWymuvEv-mk';
 
 // load google map script
 const loadGoogleMapScript = (callback) => {
@@ -27,10 +27,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <h3>Custom tooltip on marker for google maps - <a href="https://www.cluemediator.com" target="_blank">Clue Mediator</a></h3>
+    
       {!loadMap ? <div>Loading...</div> : <GMap />}
       <br/>
-      <small><b>Note:</b> In order to make it work, you have to set the YOUR_GOOGLE_MAP_API_KEY in App.js file. </small>
+  
     </div>
   );
 }
